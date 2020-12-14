@@ -10,7 +10,8 @@ function checkMail() {
 	} else if (inputText.value.match(mailformat)) {
 		mailError.style.display = "none";
 		inputText.style.border = "2px solid hsl(0, 36%, 70%)";
-		mailOk.style.display = "block";
+        mailOk.style.display = "block";
+        inputText.value = "";
 
 	} else {
 		inputText.style.border = "2px solid hsl(0, 93%, 68%)";
