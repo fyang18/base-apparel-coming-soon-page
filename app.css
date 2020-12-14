@@ -1,0 +1,183 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffdfe;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 84px;
+    margin-left: 32px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.description h1 {
+	color: #393333;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 9px;
+	margin-top: 66px;
+	line-height: 1.2;
+}
+
+.description h1 span{
+    color: hsl(0, 36%, 70%);
+    text-transform:uppercase;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.description p {
+	color: hsl(0, 36%, 70%);
+	margin: 30px 39px 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.form input[type=text] {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 35px;
+    height: 48px;
+    width: 310px;
+    padding-left: 24px;
+}
+
+.form input[type="image"] {
+	background-color: #f19b9a;
+	border: none;
+	border-radius: 35px;
+	padding: 14px 24px 14px;
+    transform: translateX(125px);
+    position: absolute;
+}
+
+.form input[type=text]::placeholder {
+    color: #e1cdce;
+  }
+
+.errorMail {
+    color: hsl(0, 93%, 68%);
+	position: relative;
+	margin-left: -135px;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+.okMail {
+    color: hsl(0, 36%, 70%);
+	position: relative;
+	left: 0;
+	margin-left: -210px;
+	font-size: 10px;
+	margin-top: 5px;
+}
+
+.errorMail, .okMail {
+    display: none;
+}
+
+.right {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1230px) {
+    .images {
+        display: none;
+    }
+
+    .left {
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .right {
+        display: block;
+        height: auto;
+        max-width: 610px;
+    }
+    
+    .container {
+        flex-direction: row;
+    }
+
+    .header {
+        height: auto;
+        margin-left: 165px;
+        margin-top: 66px;
+    }
+
+    .description {
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 165px;
+    }
+
+    .description h1 {
+        font-size: 50px;
+        margin-top: 140px;
+    }
+
+    .description h1 span {
+        font-size: 50px;
+    }
+
+    .description p {
+        line-height: 1.8;
+        margin: 50px 290px 0 0;
+    }
+
+    .form {
+        margin-top: 50px;
+    }
+
+    .form input[type="text"] {
+        height: 56px;
+        width: 445px;
+        padding-left: 32px;
+    }
+
+    .form input[type="image"] {
+        padding: 18px 46px 19px;
+        transform: translateX(172px);
+    }
+
+    .errorMail, .okMail {
+        margin-left: 33px;
+    }
+}
