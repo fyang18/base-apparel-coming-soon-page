@@ -123,8 +123,8 @@ body {
     }
 
     .left {
-        background-image: url(images/bg-pattern-desktop.svg);
-        background-repeat: no-repeat;
+        background-image: url(images/bg-pattern-desktop.svg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        background-repeat: no-repeat, no-repeat;
         background-size: 100%;
     }
     .right {
