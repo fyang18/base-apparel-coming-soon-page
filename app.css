@@ -70,6 +70,7 @@ body {
 }
 
 .form input[type=text] {
+    background-color: #fff8f9;
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 35px;
     height: 48px;
