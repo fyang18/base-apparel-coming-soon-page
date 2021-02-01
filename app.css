@@ -68,6 +68,9 @@ body {
     margin-top: 40px;
     position: relative;
 }
+.form input:focus { 
+    outline: none; 
+}
 
 .form input[type=text] {
     background-color: #fff8f9;
